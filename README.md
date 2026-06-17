@@ -68,14 +68,6 @@ The game is rendered entirely using SCP:SL's built-in rich-text hint system with
 3. **Restart** the server — the config file is generated automatically at `EXILED/Configs/`
 4. Done ✅
 
-**To build from source:**
-```bash
-git clone https://github.com/YourUsername/WorkstationSnake
-cd WorkstationSnake
-dotnet build -c Release
-# Output: bin/Release/net48/WorkstationSnake.dll
-```
-
 ---
 
 ## ⚙️ Configuration
@@ -183,6 +175,6 @@ When contributing, please:
 
 <div align="center">
 
-Made with ❤️ for the **Pustkownia** SCP:SL community
+Made with ❤️ Please credit if you use it!
 
 </div>
