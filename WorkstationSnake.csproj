@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>WorkstationSnake</AssemblyName>
+    <RootNamespace>WorkstationSnake</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <!--
+    EXILED           → Exiled.API, Exiled.Events, and all Exiled modules
+    Exiled.Dev.References → Game engine DLLs (Assembly-CSharp, UnityEngine, etc.)
+                            needed so the compiler can resolve game types.
+    Private=false    → Do NOT copy these into the output folder; they come
+                       from the game server at runtime.
+  -->
+  <ItemGroup>
+    <PackageReference Include="EXILED" Version="8.9.11" />
+    <PackageReference Include="Exiled.Dev.References" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
